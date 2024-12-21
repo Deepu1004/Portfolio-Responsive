@@ -41,14 +41,6 @@ portfolio-website/
 └── README.md             # Documentation for the project
 ```
 
-## Screenshots
-
-### Light Mode
-![Light Mode](assets/screenshots/light-mode.png)
-
-### Dark Mode
-![Dark Mode](assets/screenshots/dark-mode.png)
-
 ## Live Demo
 Check out the live version of the website [here](https://deepu1004.github.io/portfolio-website/).
 
