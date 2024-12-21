@@ -42,7 +42,7 @@ portfolio-website/
 ```
 
 ## Live Demo
-Check out the live version of the website [here](https://deepu1004.github.io/portfolio-website/).
+Check out the live version of the website [here](https://deepu1004.github.io/Portfolio-Responsive/).
 
 ## License
 
