@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+    <!-- NavBar for Large Screens -->
+    <nav id="desktop-nav">
+        <div class="logo"><a href="#">Deepu Varanasi</a></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- NavBar for Small Screens -->
+    <nav id="hamburger-nav">
+        <div class="logo">Deepu Varanasi</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mouse Movements -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Profile Section -->
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/pic.png" alt="Deepu Varanasi profile picture" />
+            <div style="list-style-type: none;">
+                <img id="dark-mode-toggle" src="./assets/lightmode/toggle-light.png" alt="Toggle Dark Mode"
+                    data-dark-src="./assets/darkmode/toggle-dark.png"
+                    data-light-src="./assets/lightmode/toggle-light.png" />
+            </div>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Deepu Varanasi</h1>
+            <p class="section__text__p2">Full-stack Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/DeepuResume.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/lightmode/email.png" alt="My Gmail" class="icon" data-dark-src="./assets/darkmode/email.png"
+                    data-light-src="./assets/lightmode/email.png" onclick="window.open('https://github.com/Deepu1004')" />
+                <img src="./assets/lightmode/linkedin.png" alt="My LinkedIn profile" class="icon"
+                    data-dark-src="./assets/darkmode/linkedin.png" data-light-src="./assets/lightmode/linkedin.png"
+                    onclick="window.open('https://www.linkedin.com/in/deepuvaranasi/')" />
+                <img src="./assets/lightmode/github.png" alt="My Github profile" class="icon"
+                    data-dark-src="./assets/darkmode/github.png" data-light-src="./assets/lightmode/github.png"
+                    onclick="window.open('https://github.com/Deepu1004')" />
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/pic-4.jpeg" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/lightmode/experience.png" alt="Skills icon" class="icon"
+                            data-dark-src="./assets/darkmode/experience.png"
+                            data-light-src="./assets/lightmode/experience.png" />
+                        <h3>Skills</h3>
+                        <p>Java, Python, JavaScript, HTML/CSS</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/lightmode/education.png" alt="Education icon" class="icon"
+                            data-dark-src="./assets/darkmode/education.png"
+                            data-light-src="./assets/lightmode/education.png" />
+                        <h3>Education</h3>
+                        <p>B.Tech in IT<br />IARE(ongoing)</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        I am a dedicated Full-Stack Developer with strong proficiency in Java,Python, JavaScript,
+                        HTML/CSS.
+                        I have a deep interest in web development and machine learning, constantly improving my skills
+                        through hands-on coding and problem-solving. As part of programs like Microsoft Learn Student
+                        Ambassadors
+                        (MLSA), I
+                        actively engage in learning and sharing knowledge while focusing on building efficient, scalable
+                        solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/lightmode/arrow.png" alt="Arrow icon" class="icon arrow"
+            data-dark-src="./assets/darkmode/arrow.png" data-light-src="./assets/lightmode/arrow.png"
+            onclick="location.href='./#skills'" />
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Technical Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/lightmode/checkmark.png" alt="skills icon" class="icon"
+                                data-dark-src="./assets/darkmode/checkmark.png"
+                                data-light-src="./assets/lightmode/checkmark.png" />
+                            <div>
+                                <h3>Java</h3>
+                                <p>Advanced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/lightmode/checkmark.png" alt="skills icon" class="icon"
+                                data-dark-src="./assets/darkmode/checkmark.png"
+                                data-light-src="./assets/lightmode/checkmark.png" />
+                            <div>
+                                <h3>Python</h3>
+                                <p>Expert</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/lightmode/checkmark.png" alt="skills icon" class="icon"
+                                data-dark-src="./assets/darkmode/checkmark.png"
+                                data-light-src="./assets/lightmode/checkmark.png" />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Advanced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/lightmode/checkmark.png" alt="skills icon" class="icon"
+                                data-dark-src="./assets/darkmode/checkmark.png"
+                                data-light-src="./assets/lightmode/checkmark.png" />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Expert</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/lightmode/checkmark.png" alt="skills icon" class="icon"
+                                data-dark-src="./assets/darkmode/checkmark.png"
+                                data-light-src="./assets/lightmode/checkmark.png" />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Expert</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/lightmode/checkmark.png" alt="skills icon" class="icon"
+                                data-dark-src="./assets/darkmode/checkmark.png"
+                                data-light-src="./assets/lightmode/checkmark.png" />
+                            <div>
+                                <h3>React js</h3>
+                                <p>Advanced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/lightmode/checkmark.png" alt="skills icon" class="icon"
+                                data-dark-src="./assets/darkmode/checkmark.png"
+                                data-light-src="./assets/lightmode/checkmark.png" />
+                            <div>
+                                <h3>Node js</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/lightmode/checkmark.png" alt="skills icon" class="icon"
+                                data-dark-src="./assets/darkmode/checkmark.png"
+                                data-light-src="./assets/lightmode/checkmark.png" />
+                            <div>
+                                <h3>Express js</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Coding Profiles -->
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Coding Profiles</h2>
+                    <div class="article-container">
+                        <article>
+                            <a href="https://leetcode.com/u/DeepuVaranasi/" target="_blank" class="codinglinks">
+                                <img src="./assets/lightmode/leetcode.png" alt="LeetCode" class="icon profile-icon"
+                                    data-dark-src="./assets/darkmode/leetcode.png"
+                                    data-light-src="./assets/lightmode/leetcode.png" />
+                            </a>
+                            <div>
+                                <h3>LeetCode</h3>
+                                <p>1700+ Rating, Solved 200+ problems</p>
+                            </div>
+                        </article>
+                        <article>
+                            <a href="https://www.codechef.com/users/satyasaideepak" target="_blank" class="codinglinks">
+                                <img src="./assets/lightmode/codechef.png" alt="CodeChef" class="icon profile-icon"
+                                    data-dark-src="./assets/darkmode/codechef.png"
+                                    data-light-src="./assets/lightmode/codechef.png" />
+                            </a>
+                            <div>
+                                <h3>CodeChef</h3>
+                                <p>3-Star Coder</p>
+                            </div>
+                        </article>
+                        <article>
+                            <a href="https://www.hackerrank.com/profile/varanasisaideep1" target="_blank"
+                                class="codinglinks">
+                                <img src="./assets/lightmode/hackerrank.png" alt="HackerRank" class="icon profile-icon"
+                                    data-dark-src="./assets/darkmode/hackerrank.png"
+                                    data-light-src="./assets/lightmode/hackerrank.png" />
+                            </a>
+                            <div>
+                                <h3>HackerRank</h3>
+                                <p>Gold Badge: Problem Solving,Java,Python</p>
+                            </div>
+                        </article>
+                        <article>
+                            <a href="https://www.naukri.com/code360/profile/DeepuVaranasi" target="_blank"
+                                class="codinglinks">
+                                <img src="./assets/lightmode/codingninjas.png" alt="CodingNinjas"
+                                    class="icon profile-icon" data-dark-src="./assets/darkmode/codingninjas.png"
+                                    data-light-src="./assets/lightmode/codingninjas.png" />
+                            </a>
+                            <div>
+                                <h3>CodingNinjas</h3>
+                                <p>Solved 160+ problems</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/lightmode/arrow.png" alt="Arrow icon" class="icon arrow"
+            data-dark-src="./assets/darkmode/arrow.png" data-light-src="./assets/lightmode/arrow.png"
+            onclick="location.href='./#projects'" />
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="skills-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.png" alt="Virtual Mouse" class="project-img" />
+                    </div>
+                    <h2 class="skills-sub-title project-title">Virtual Mouse</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://github.com/Deepu1004/Virtual_Mouse_Interface_Using_Hand_Gestures')">
+                            Github
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-2.png" alt="News Mania" class="project-img" />
+                    </div>
+                    <h2 class="skills-sub-title project-title">News Mania</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://github.com/Deepu1004/-News-Mania')">
+                            Github
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-3.png" alt="Weather Forecast" class="project-img" />
+                    </div>
+                    <h2 class="skills-sub-title project-title">Weather Forecast</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://github.com/Deepu1004/Weather-Forecast')">
+                            Github
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/lightmode/arrow.png" alt="Arrow icon" class="icon arrow"
+            data-dark-src="./assets/darkmode/arrow.png" data-light-src="./assets/lightmode/arrow.png"
+            onclick="location.href='./#contact'" />
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/lightmode/email.png" alt="Email icon" class="icon contact-icon email-icon"
+                    data-dark-src="./assets/darkmode/email.png" data-light-src="./assets/lightmode/email.png" />
+                <p><a href="mailto:varanasisaideepak@gmail.com">varanasisaideepak@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/lightmode/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"
+                    data-dark-src="./assets/darkmode/linkedin.png" data-light-src="./assets/lightmode/linkedin.png" />
+                <p><a href="https://www.linkedin.com/in/deepuvaranasi/">DeepuVaranasi</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Deepu Varanasi</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
