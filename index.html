@@ -13,32 +13,30 @@
 <body>
     <!-- NavBar for Large Screens -->
     <nav id="desktop-nav">
-        <div class="logo"><a href="#">Deepu Varanasi</a></div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+        <div class="logo"><a href="#">Sai Deepak Varanasi</a></div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
-
+    
     <!-- NavBar for Small Screens -->
     <nav id="hamburger-nav">
-        <div class="logo">Deepu Varanasi</div>
+        <div class="logo">Sai Deepak Varanasi</div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-            <div class="menu-links">
+            <ul class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
+            </ul>
         </div>
     </nav>
 
@@ -58,7 +56,7 @@
         </div>
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Deepu Varanasi</h1>
+            <h1 class="title">Sai Deepak Varanasi</h1>
             <p class="section__text__p2">Full-stack Developer</p>
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./assets/DeepuResume.pdf')">
@@ -74,7 +72,7 @@
                         data-light-src="./assets/lightmode/email.png" /></a>
                 <img src="./assets/lightmode/linkedin.png" alt="My LinkedIn profile" class="icon"
                     data-dark-src="./assets/darkmode/linkedin.png" data-light-src="./assets/lightmode/linkedin.png"
-                    onclick="window.open('https://www.linkedin.com/in/deepuvaranasi/')" />
+                    onclick="window.open('https://www.linkedin.com/in/saideepakvaranasi/')" />
                 <img src="./assets/lightmode/github.png" alt="My Github profile" class="icon"
                     data-dark-src="./assets/darkmode/github.png" data-light-src="./assets/lightmode/github.png"
                     onclick="window.open('https://github.com/Deepu1004')" />
@@ -274,13 +272,14 @@
     <section id="projects">
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
+        <!-- 1st Section -->
         <div class="skills-details-container">
             <div class="about-containers">
                 <div class="details-container color-container">
                     <div class="article-container">
                         <img src="./assets/project-1.png" alt="Virtual Mouse" class="project-img" />
                     </div>
-                    <h2 class="skills-sub-title project-title">Virtual Mouse</h2>
+                    <h2 class="skills-sub-title project-title">Virtual Mouse Using Hand Gestures</h2>
                     <div class="btn-container">
                         <button class="btn btn-color-2 project-btn"
                             onclick="window.open('https://github.com/Deepu1004/Virtual_Mouse_Interface_Using_Hand_Gestures')">
@@ -292,10 +291,10 @@
                     <div class="article-container">
                         <img src="./assets/project-2.png" alt="News Mania" class="project-img" />
                     </div>
-                    <h2 class="skills-sub-title project-title">News Mania</h2>
+                    <h2 class="skills-sub-title project-title">The News Mania</h2>
                     <div class="btn-container">
                         <button class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://github.com/Deepu1004/-News-Mania')">
+                            onclick="window.open('https://github.com/Deepu1004/The-News-Mania')">
                             Github
                         </button>
                     </div>
@@ -312,8 +311,53 @@
                         </button>
                     </div>
                 </div>
+            </div>    
+        </div>
+
+        <!-- 2nd Section -->
+        <div class="skills-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-4.png" alt="Marvels-Dek" class="project-img" />
+                    </div>
+                    <h2 class="skills-sub-title project-title">Marvels-Dek</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://github.com/Deepu1004/Marvel-HeroesDek')">
+                            Github
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-5.png" alt="Twitter Sentiment Analysis" class="project-img" />
+                    </div>
+                    <h2 class="skills-sub-title project-title">Twitter Sentiment</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('')">
+                            Still Working
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-6.png" alt="Object Detection" class="project-img" />
+                    </div>
+                    <h2 class="skills-sub-title project-title">Object Detection</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('')">
+                            Still Working
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
+
+        
+
         <img src="./assets/lightmode/arrow.png" alt="Arrow icon" class="icon arrow"
             data-dark-src="./assets/darkmode/arrow.png" data-light-src="./assets/lightmode/arrow.png"
             onclick="location.href='./#contact'" />
@@ -332,7 +376,7 @@
             <div class="contact-info-container">
                 <img src="./assets/lightmode/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"
                     data-dark-src="./assets/darkmode/linkedin.png" data-light-src="./assets/lightmode/linkedin.png" />
-                <p><a href="https://www.linkedin.com/in/deepuvaranasi/">DeepuVaranasi</a></p>
+                <p><a href="https://www.linkedin.com/in/saideepakvaranasi/">SaiDeepakVaranasi</a></p>
             </div>
         </div>
     </section>
@@ -349,7 +393,7 @@
                 </ul>
             </div>
         </nav>
-        <p>Deepu Varanasi</p>
+        <p>Sai Deepak Varanasi</p>
     </footer>
     <script src="script.js"></script>
 </body>

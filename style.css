@@ -35,6 +35,10 @@ body.dark-mode p {
     max-width: 30px;
 }
 
+button{
+    font-family: 'Poppins';
+}
+
 /* Mouse Movements */
 
 .cursor-dot {
@@ -497,8 +501,9 @@ body.dark-mode .project-title {
 }
 
 body.dark-mode .project-btn {
-    color: white;
-    border-color: rgb(180, 180, 180);
+    color: rgb(255, 255, 255);
+    background-color: #000;
+    border-color: rgb(3, 3, 3);
 }
 
 /* CONTACT */
